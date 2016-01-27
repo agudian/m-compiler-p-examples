@@ -9,6 +9,9 @@
 
   <properties>
     <mapstruct.version>1.0.0.Final</mapstruct.version>
+
+    <!-- Automatically activate m2e APT in Eclipse  -->
+    <m2e.apt.activation>jdt_apt</m2e.apt.activation>
   </properties>
 
   <build>
@@ -21,11 +24,11 @@
           <source>1.8</source>
           <target>1.8</target>
           <annotationProcessorPaths>
-            <path>
+            <annotationProcessorPath>
               <groupId>org.mapstruct</groupId>
               <artifactId>mapstruct-processor</artifactId>
               <version>${mapstruct.version}</version>
-            </path>
+            </annotationProcessorPath>
           </annotationProcessorPaths>
         </configuration>
       </plugin>
