@@ -4,7 +4,7 @@ On the command-line, use `mvn clean compile` on the projects to check that they 
 
 Opened / imported in the IDE, the Maven projects should compile without errors as well (once the annotation processor settings are adapted properly).
 
-Description of the projects:
+#### Description of the projects
 
 * `real-world-mapstruct`: a single module project that uses the MapStruct annotation processor to generate a class. The MapStruct processor jar has no transitive dependencies.
 * `synth-with-transitive-deps`: multi-module project that contains one bogus processor implementation and a module that uses this processor:
